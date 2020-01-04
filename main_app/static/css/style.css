@@ -8,6 +8,7 @@ body {
     
 }
 
+
 h1 {
     font-size: 75px;
     background: linear-gradient(to right, #ffb7d9 0%, #b15fff 100%);
@@ -17,7 +18,26 @@ h1 {
     -webkit-text-stroke-color: lightblue;
 }
 
+h3 {
+    font-size: 75px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    
+    justify-items: center;
+}
 
+.description {
+    display: flex;
+   
+    font-size: 35px;
+    background: linear-gradient(to right, #ffb7d9 0%, #b15fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: lightblue;
+}
 img {
     height: 30px;
     width: 30px;
