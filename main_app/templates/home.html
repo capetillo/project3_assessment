@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>To-Do List</h1>
+{% if todos %}
+
+<table>
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for todo in todos %}
+        <tr>
+            <td>{{todo}}</td>
+            <td><a href="{% url 'todos_delete' todo.id %}"><img src="https://i.pinimg.com/originals/9c/60/7f/9c607fc5accd3a24cd3e34b114d609bc.png"></a></td>
+        </tr>
+        {%endfor%}
+    </tbody>
+</table>
+
+<a href="{% url 'todos_add' %}" class="pure-button">ADD ITEM</a>
+{%else %}
+<h3>No items</h3>
+<hr>
+<a href="{% url 'todos_add' %}" class="pure-button">ADD ITEM</a>
+{%endif%}
+{% endblock %}

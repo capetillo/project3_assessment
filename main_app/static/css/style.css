@@ -1,0 +1,24 @@
+body {
+    margin: 2rem;
+    background-image: url('https://images.pond5.com/holographic-colors-moving-background-footage-088175272_prevstill.jpeg');
+    font-family: 'Spicy Rice', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h1 {
+    font-size: 75px;
+    background: linear-gradient(to right, #ffb7d9 0%, #b15fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: lightblue;
+}
+
+
+img {
+    height: 30px;
+    width: 30px;
+}

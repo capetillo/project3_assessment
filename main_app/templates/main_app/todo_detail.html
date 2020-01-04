@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <thead>
+        <tr>
+            <th>
+                Description  
+            </th>
+            <th>
+                Delete
+            </th>
+        </tr>
+        
+        <tr>
+           
+            <td>
+                
+                {{todo}}
+            </td>
+            <td>
+                <a href="{% url 'todos_delete' todo.id %}">X</a>
+            </td>
+        
+        </tr>
+        
+    </thead>
+    
+    {% endblock %}
